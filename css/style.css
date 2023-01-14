@@ -1,14 +1,15 @@
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-}
+}*/
 body{
     background-color: aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    color: #000000;
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
 }
 .container{
     width: 75%;
@@ -17,29 +18,25 @@ body{
 }
 .header-sec {
     height: 80px;
-    text-align: center;
     background-color: rgb(12 101 177);
 }
-.hhas{
+.header-sec h2{
     color: #ffff;
     padding-top: 28px;
+    text-align: center;
     text-shadow: 3px 2px 9px #160606;
 }
 .main{
-    height: 490px;
+   /* height: 490px;*/
     padding: 10px;
     background-color: #5b9ddb;
-    
 }
-.has {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 25px;
-    text-align: center;
-    text-shadow: rgba(2, 2, 6, 0.76) 2px 4px 5px;
-    border-bottom: 2px solid #020a12dd;
-    padding-bottom: 7px;
-    margin-bottom: 10px;
+.main h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 5px;
+}
+.main p{
+    text-align: justify;
 }
 .footer-sec {
     height: 50px;
@@ -49,4 +46,73 @@ body{
     padding-top: 14px;
     font-size: 12px;
     color: #ffffff;
+}
+/* for max width 280px*/
+@media screen and (max-width:280px) {
+    .header-sec {
+        height: 40px;
+        background-color: rgb(230, 12, 182);
+    }
+    .header-sec h2{
+        padding-top: 10px;
+        font-size: 100%;
+    }    
+    .main{
+         height: auto;
+         padding: 10px;
+         background-color: #b12f9b;
+     }
+    .main h1, h2, h3, h4, h5, h6{
+        margin: 0;
+        padding: 0;
+        font-size:80%;
+    }
+    .main p{
+        font-size: 100%;
+    }
+    .footer-sec {
+        height: 30px;
+        background-color: #770945;
+        padding-top: 5px;
+        font-size: 100%;
+    }
+    .footer-sec h2 {
+        font-size: 75%;
+        padding-top: 5px;
+    }
+
+}
+/*for max width 480*/
+@media  (min-width:281px) and (max-width:480px)  {
+    .header-sec {
+        height:40px;
+        background-color: rgb(12, 230, 77);
+    }
+    .header-sec h2{
+        padding:10px;
+    }    
+    .main{
+         height: auto;
+         padding: 10px;
+         background-color: #3ec57b;
+     }
+    .main h1, h2, h3, h4, h5, h6{
+        margin: 0;
+        padding: 0;
+        font-size:90%;
+    }
+    .main p{
+        font-size: 100%;
+    }
+    .footer-sec {
+        height: 30px;
+        background-color: #0eeb8f;
+        padding-top: 5px;
+        font-size: 100%;
+    }
+    .footer-sec h2 {
+        font-size: 90%;
+        padding-top: 5px;
+    }
+
 }
